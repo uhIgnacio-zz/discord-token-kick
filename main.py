@@ -14,7 +14,7 @@ async def start(ctx: commands.Context):
     for member in ctx.guild.members: 
         if "skripted on top" or "ghurb" or "amogus scripted funny" or "Aced on top ong" or "motion" in member.name.lower(): 
             ctx.message.reply('banning tokens')
-            await member.ban(reason='token')
+            await member.kick(reason='token')
             ctx.message.edit('tokens banned')
 
 bot.run(token)
